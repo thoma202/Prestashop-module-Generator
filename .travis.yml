@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - '0.10'
+before_install:
+  - currentfolder=${PWD##*/}
+  - if [ "$currentfolder" != 'generator-prestashop-module' ]; then cd .. && eval "mv $currentfolder generator-prestashop-module" && cd generator-prestashop-module; fi
+
